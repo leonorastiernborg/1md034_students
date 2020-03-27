@@ -22,7 +22,7 @@ Create an index.html file which contains:
 - [X] A section to select burgers that contains at least three items. Each item has at least:
 	- [X] A name
 	- [X] An image
-	- [ ] Information about allergies 
+	- [X] Information about allergies 
 - [ ] A section to collect customer information:
 	- [ ] First- and Last Name (in one field)
 	- [ ] E-Mail Address
