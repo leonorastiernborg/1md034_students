@@ -1,3 +1,13 @@
 body {
     font-family: "Roboto Light", sans-serif;
 }
+.allergi {
+    color: #ff5500;
+}
+
+#Gluten{
+    font-weight:bold;
+}
+#Laktos{
+    font-weight:bold;
+}
