@@ -1,5 +1,6 @@
 body {
     font-family: "Roboto Light", sans-serif;
+    font-size: 110%;
 }
 .allergi {
     color: #ff5500;
@@ -10,4 +11,14 @@ body {
 }
 #Laktos{
     font-weight:bold;
+}
+
+#burgare{
+
+    color: white;
+    background: black;
+}
+#kontaktinfo{
+
+
 }
