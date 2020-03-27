@@ -22,3 +22,8 @@ body {
 
 
 }
+
+button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
