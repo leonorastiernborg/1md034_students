@@ -16,8 +16,15 @@ body {
 #burgare{
 
     color: white;
+    width: 20;
     background: black;
 }
+
+#table{
+    width: 101%;
+    margin-left: 20px;
+}
+
 #kontaktinfo{
 
 
