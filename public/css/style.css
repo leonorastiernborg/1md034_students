@@ -13,12 +13,23 @@ body {
     font-weight:bold;
 }
 #headerpic {
-    width: 1000px;
+    width: 100%;
     height: auto;
     margin-left: -450px;
     opacity: 0.9;
 }
 
+#headertext{
+
+    margin-top: -500px;
+    opacity: 1;
+    position: absolute;
+    margin-left:320px;
+    font-family: 'Devonshire', cursive;
+    margin-right: 10px;
+    font-size: 60px;
+
+}
 
 #header {
     width: 1000px;
