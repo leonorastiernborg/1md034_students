@@ -13,7 +13,7 @@ function menuIteams(n, k, i,a, p, pth){
     this.image =  pth;
     this.iteam = function(){
         return  this.namn + ' '  + this.cal ;
-    };gi
+    };
 
 }
 
@@ -27,12 +27,15 @@ let burger4 = new menuIteams('Vegburgare', '670 kcal',  'vegoburgare, majonnäs,
     'gluten, laktos', '85kr', '/img/burger4.jpg');
 let burger5 = new menuIteams('Veganburgare', '720 kcal',  'veganburgare, vegan-majonnäs, sötpotatisbröd', 'gluten', '80kr', '/img/burger5.jpg');
 
-console.log( burger1.iteam());
+console.log(burger1.name());
 
-console.log( burger2.iteam());
+console.log(burger2.name());
 
-console.log( burger3.iteam());
+console.log(burger3.name());
 
-console.log( burger4.iteam());
+console.log(burger4.name());
 
-console.log( burger5.iteam());
+console.log(burger5.name());
+
+document.getElementById("myID").innerHTML = "Välj en burgare";
+
