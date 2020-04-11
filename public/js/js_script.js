@@ -17,6 +17,7 @@ function menuIteams(n, k, i,a, p, pth){
 
 }
 
+
 let burger1 = new  menuIteams('Halloumiburgare', '645 kcal',  'Halloumi, briochebröd och majonnäs',
     'gluten', '60kr', '/img/burger1.jpg');
 let burger2 = new menuIteams('Halloumiburgaren2.0', '700 kcal',  'Umamidressing, halloumi, briochebröd',
@@ -27,15 +28,14 @@ let burger4 = new menuIteams('Vegburgare', '670 kcal',  'vegoburgare, majonnäs,
     'gluten, laktos', '85kr', '/img/burger4.jpg');
 let burger5 = new menuIteams('Veganburgare', '720 kcal',  'veganburgare, vegan-majonnäs, sötpotatisbröd', 'gluten', '80kr', '/img/burger5.jpg');
 
-console.log(burger1.name());
 
-console.log(burger2.name());
 
-console.log(burger3.name());
+document.getElementById("burger1").innerHTML = burger1.iteam();
 
-console.log(burger4.name());
+document.getElementById("burger2").innerHTML = burger2.iteam();
 
-console.log(burger5.name());
+document.getElementById("burger3").innerHTML = burger3.iteam();
 
-document.getElementById("myID").innerHTML = "Välj en burgare";
+document.getElementById("burger4").innerHTML = burger4.iteam();
 
+document.getElementById("burger5").innerHTML = burger5.iteam();
