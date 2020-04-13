@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 
-    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/socket.io/socket.io.js" defer></script>
+    <script defer type="text/javascript" src="js/menu.js"></script>
     <script defer src="https://vuejs.org/js/vue.js"></script>
-    <script defer src="js/menu.js"></script>
     <script defer src="js/js_script.js"></script>
     <script defer src="js/vue_script.js"></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/deli-very.css">
@@ -155,20 +156,18 @@
             <input  v-model="anonymt" type="radio" id="anonymt"  name="an"  value="anonymt"> Anonymt<br>
         </p>
 
+
     <h1> Click in the map! </h1>
     <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
     <div class="view-box">
-        <div id="dots" v-on:click="addOrder">
+        <div id="dots" v-on:click="displayOrder">
             <div
-                    v-for="(order, key) in orders"
-                    v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
-                {{key}}
+                    v-bind:style="{ left: orderAdress.details.x + 'px', top: orderAdress.details.y + 'px'}">
+                T
+
             </div>
         </div>
     </div>
-
-
-
 
 
 
@@ -178,7 +177,7 @@
 </p>
 
 
-    <div id="order">
+    <div id="orderdisplay">
 
         </div>
 
