@@ -1,6 +1,6 @@
 
 
-
+/*
 
 
 function menuIteams(n, k, i,a, p, pth){
@@ -17,12 +17,21 @@ function menuIteams(n, k, i,a, p, pth){
 
 }
 
+function show_image(src, width, height, alt){
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    return img;
+}
 
-let burger1 = new  menuIteams('Halloumiburgare', '645 kcal',  'Halloumi, briochebröd och majonnäs',
+
+let burger1 = new  menuIteams('Halloumi', '645 kcal',  'Halloumi, briochebröd och majonnäs',
     'gluten', '60kr', '/img/burger1.jpg');
-let burger2 = new menuIteams('Halloumiburgaren2.0', '700 kcal',  'Umamidressing, halloumi, briochebröd',
+let burger2 = new menuIteams('Halloumi2.0', '700 kcal',  'Umamidressing, halloumi, briochebröd',
     'gluten, laktos', '70kr', '/img/burger2.jpg');
-let burger3 = new menuIteams('Halloumiburgaren3.0', '800 kcal',  'halloumi, lökringar, majonnäs',
+let burger3 = new menuIteams('Halloumi3.0', '800 kcal',  'halloumi, lökringar, majonnäs',
     'gluten, laktos', '80kr', '/img/burger3.jpg');
 let burger4 = new menuIteams('Vegburgare', '670 kcal',  'vegoburgare, majonnäs, sötpotatisbröd',
     'gluten, laktos', '85kr', '/img/burger4.jpg');
@@ -42,17 +51,20 @@ for (i in menu)
     let listingredienser = document.createElement("li");
     let listallergier = document.createElement("li")
     let listpris = document.createElement("li");
+    let listimage = document.createElement("p");
     let namn = document.createTextNode(menu[i].namn);
     let kcal = document.createTextNode(menu[i].cal);
     let ingredienser = document.createTextNode(menu[i].ingredienser)
     let allergier = document.createTextNode(menu[i].allergier)
     let pris = document.createTextNode(menu[i].price)
     listnamn.appendChild(namn);
+    listimage.appendChild(show_image(menu[i].image, 200, 150, menu[i].namn))
     listkcal.appendChild(kcal);
     listingredienser.appendChild(ingredienser);
     listallergier.appendChild(allergier);
     listpris.appendChild(pris);
     burgerdiv.appendChild(listnamn);
+    burgerdiv.appendChild(listimage);
     burgerdiv.appendChild(listkcal);
     burgerdiv.appendChild(listingredienser);
     burgerdiv.appendChild(listallergier);
@@ -61,3 +73,6 @@ for (i in menu)
 
 }
 
+
+
+ */

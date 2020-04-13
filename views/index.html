@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://vuejs.org/js/vue.js"></script>
+    <script defer src="https://vuejs.org/js/vue.js"></script>
     <script defer src="js/js_script.js" defer></script>
     <script defer src="js/vue_script.js" defer></script>
 
@@ -24,91 +24,93 @@
 
     <!--
 
-      <section id="burgare">
+         <section id="burgare">
 
-      </section>
+         </section>
 
+ -->
 
-     <section id="myID">
-     <div v-for="burger in menu">
-           <h4> {{ burger.namn }}</h4>
-
-
-                 <ul>
-
-                     <li> {{ burger.cal }}  </li>
-                     <li> {{ burger.ingredienser }}  </li>
-                     <li> {{ burger.allergier }}  </li>
-                     <li> {{ burger.price }}  </li>
-                 </ul>
+          <section id="burgare">
+          <div v-for="burger in menu">
+                <h4> {{ burger.namn }}</h4>
 
 
-             </div>
+                      <ul>
+                          <img v-bind:src="burger.image" width="150" height="100" align = "center">
+                          <li> {{ burger.cal }}  </li>
+                          <li> {{ burger.ingredienser }}  </li>
+                          <li> {{ burger.allergier }}  </li>
+                          <li> {{ burger.price }}  </li>
+                      </ul>
 
-  </section>
 
+                  </div>
 
-      -->
+       </section>
 
 
 
 
+    <!--
 
 
 
 
 
-    <section id="burgare">
-
-                <h4>Välj burgare:</h4>
-                <p>Här kan du välja den burgaren du vill ha:</p>
-
-                <div class="wrapper">
-                <div class="box a" >
-                    <h4>Halloumiburgare</h4>
-                    <td><img src="https://www.max.se/contentassets/be939d2988e747adacd14f5ead4231cb/product_halloumiburgare.jpg"  width="300"></td>
-                    <ul>
-                        <li>645 kcal</li>
-                        <li>Halloumi, briochebröd, jalapeñosalsa, rödlök, isbergssallad och majonnäs</li>
-                        <li> <div class="allergier">Gluten</li>
-                        <li>Pris: 60kr </li>
-                    </ul>
-                </div>
 
 
-                <div class="box b">
+       <section id="burgare">
 
-                    <th><h4>Hallomiburgare deluxe</h4></th>
-                    <td><img src="https://www.max.se/contentassets/00848003f52b4c8d8dcf139ecdb3fc1e/product_gdl-umami-halloumi2.jpg"  width="300"></td>
-                    <ul>
-                        <li>700 kcal</li>
-                        <li>Umamidressing, halloumi, briochebröd, picklad rödlök, tomat</li>
-                        <li> <div class="allergier">Gluten</li>
-                        <li>Pris: 70kr </li>
-                    </ul>
+                   <h4>Välj burgare:</h4>
+                   <p>Här kan du välja den burgaren du vill ha:</p>
 
-                </div>
-
-
-
-                <div class="box c">
-
-                    <th><h4>Hallomiburgare deluxe deluxe</h4></th>
-                    <td><img src="https://www.max.se/contentassets/873f8597a2db48ff80b26b4f3d628b6d/product_gdl-smokey-chipotle-halloumi.jpg"  width="300"></td>
-                    <ul>
-                        <li>800 kcal</li>
-                        <li>halloumi, krispiga lökringar, majonnäs, picklad rödlök, sötpotatisbröd</li>
-                        <li> <div class="allergier">Gluten, Laktos</li>
-                        <li>Pris: 80kr </li>
-                    </ul>
-
-                </div>
-
-            </div>
+                   <div class="wrapper">
+                   <div class="box a" >
+                       <h4>Halloumiburgare</h4>
+                       <td><img src="https://www.max.se/contentassets/be939d2988e747adacd14f5ead4231cb/product_halloumiburgare.jpg"  width="300"></td>
+                       <ul>
+                           <li>645 kcal</li>
+                           <li>Halloumi, briochebröd, jalapeñosalsa, rödlök, isbergssallad och majonnäs</li>
+                           <li> <div class="allergier">Gluten</li>
+                           <li>Pris: 60kr </li>
+                       </ul>
+                   </div>
 
 
-            </section>
+                   <div class="box b">
 
+                       <th><h4>Hallomiburgare deluxe</h4></th>
+                       <td><img src="https://www.max.se/contentassets/00848003f52b4c8d8dcf139ecdb3fc1e/product_gdl-umami-halloumi2.jpg"  width="300"></td>
+                       <ul>
+                           <li>700 kcal</li>
+                           <li>Umamidressing, halloumi, briochebröd, picklad rödlök, tomat</li>
+                           <li> <div class="allergier">Gluten</li>
+                           <li>Pris: 70kr </li>
+                       </ul>
+
+                   </div>
+
+
+
+                   <div class="box c">
+
+                       <th><h4>Hallomiburgare deluxe deluxe</h4></th>
+                       <td><img src="https://www.max.se/contentassets/873f8597a2db48ff80b26b4f3d628b6d/product_gdl-smokey-chipotle-halloumi.jpg"  width="300"></td>
+                       <ul>
+                           <li>800 kcal</li>
+                           <li>halloumi, krispiga lökringar, majonnäs, picklad rödlök, sötpotatisbröd</li>
+                           <li> <div class="allergier">Gluten, Laktos</li>
+                           <li>Pris: 80kr </li>
+                       </ul>
+
+                   </div>
+
+               </div>
+
+
+               </section>
+
+   -->
 
     <section  id="kontaktinfo">
         <h4>Personlig information:</h4>
