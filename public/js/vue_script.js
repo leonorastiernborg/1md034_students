@@ -30,10 +30,8 @@ let burger5 = new menuIteams('Veganburgare', '720 kcal',  'veganburgare, vegan-m
 
 
 
-
 'use strict';
 const socket = io();
-
 const vm2 = new Vue({
     el: '#kontaktinfo',
     data: {
@@ -103,6 +101,15 @@ const vm2 = new Vue({
             }
             myElement.appendChild(burgerid);
         },
+        getNext: function() {
+            /* This function returns the next available key (order number) in
+             * the orders object, it works under the assumptions that all keys
+             * are integers. */
+            let lastOrder = Object.keys(this.orders).reduce(function(last, next) {
+                return Math.max(last, next);
+            }, 0);
+            return lastOrder + 1;
+        },
 
         addOrder: function(event) {
             /* When you click in the map, a click event object is sent as parameter
@@ -125,7 +132,7 @@ const vm2 = new Vue({
         },
     },
 
-        })
+        });
 
 
 
@@ -144,7 +151,7 @@ const vm = new Vue({
 
     }
 
-});
+})
 
 /*
 
