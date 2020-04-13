@@ -29,13 +29,78 @@ const vm = new Vue({
     el: '#burgare',
     data: {
         mat: food,
-        menu: []
+        burgers: []
+
+    }, methods:{
+
+        getBurgers: function(){
+
+            return this.burgers;
+        }
 
     }
-})
 
 
 
+});
+
+
+
+
+const vm2 = new Vue({
+    el: '#kontaktinfo',
+    data: {
+        namn: '',
+        mail: '',
+        betalingsmetod: '',
+        man: '',
+        kvinna: '',
+        annat:  '',
+        anonymt: '',
+
+
+    },
+    methods: {
+
+        markDone: function(namn, mail, betalingsmetod, man, kvinna, annat, anonymt) {
+            let myElement = document.getElementById("order");
+            let burgers = vm.getBurgers();
+            let burgerid = document.createElement('p');
+            burgerid.appendChild(document.createTextNode(burgers));
+            let namnid = document.createElement('p');
+            let mailid = document.createElement("p");
+            let checkedid = document.createElement("p");
+            let manid = document.createElement("p");
+            let kvinnaid = document.createElement("p");
+            let annatid = document.createElement("p");
+            let anonymtid = document.createElement("p");
+            namnid.appendChild(document.createTextNode(namn));
+            mailid.appendChild(document.createTextNode(mail));
+            checkedid.appendChild(document.createTextNode(betalingsmetod));
+            myElement.appendChild(namnid);
+            myElement.appendChild(mailid);
+            myElement.appendChild(checkedid);
+            if (man) {
+                manid.appendChild(document.createTextNode(man));
+                myElement.appendChild(manid);
+            }
+            if (kvinna) {
+                kvinnaid.appendChild(document.createTextNode(kvinna));
+                myElement.appendChild(kvinnaid);
+            }
+            if (annat) {
+                annatid.appendChild(document.createTextNode(annat));
+                myElement.appendChild(annatid);
+            }
+            if (anonymt) {
+                anonymtid.appendChild(document.createTextNode(anonymt));
+                myElement.appendChild(anonymtid);
+            }
+            myElement.appendChild(burgerid);
+        }
+    }
+
+        })
 
 
 

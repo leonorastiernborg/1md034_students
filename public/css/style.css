@@ -118,3 +118,13 @@ button:hover {
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;
 }
+
+#orderList {
+    top: 1em;
+    left: 1em;
+    position: absolute;
+    z-index: 2;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+}

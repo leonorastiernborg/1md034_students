@@ -9,10 +9,10 @@
 
 </head>
 <body>
-<body>
+
 <title>Lelles burgers</title>
 <meta charset="utf-8"/>
-<section>
+
 <main>
 
     <section id="header">
@@ -44,7 +44,7 @@
                               <li> {{ burger.price }}  </li>
                           </ul>
 
-
+                  <p>  <input type="checkbox" v-bind:value="burger.namn" v-bind:id="burger.id" v-model="burgers">{{burger.namn}}</p>
                       </div>
 
            </section>
@@ -113,70 +113,66 @@
 
       -->
 
-    <section  id="kontaktinfo">
-        <h4>Personlig information:</h4>
-        <p>Skriv in din personliga information för att beställa</p>
 
+<section id="kontaktinfo">
 
+    <h4>Personlig information:</h4>
 
-        <form>
-            <p>
-                <label for="namn">För och efternamn:</label><br>
-                <input type="text" id="namn" name="n" required="required" placeholder="Namn" />
-            </p>
+    <p>Skriv in din personliga information för att beställa</p>
 
-            <p>
-                <label for="mail">Mail:</label><br>
-                <input type="text" id="mail" name="m" required="required" placeholder="mail" />
-            </p>
-
-            <p>
-                <label for="street">Street:</label><br>
-                <input type="text" id="street" name="s" required="required" placeholder="street" />
-            </p>
-            <p>
-                <label for="hnumber">Housenumber:</label><br>
-                <input type="text" id="hnumber" name="h" required="required" placeholder="street" />
-            </p>
-
-
-
-
-        </form>
-
-
-
+    <form>
         <p>
-            <label for="betalingsmetod">Betalningsmetod:</label><br />
-            <select id="betalingsmetod" name="betalining" >
-                <option>Mastercard</option>
-                <option selected="selected" >Visa </option>
-                <option>Klarna</option>
-                <option>Pay pal</option>
-            </select>
+            <label id="name" for="namn">För och efternamn:</label><br>
+            <input type="text"  id="namn" name="n" required="required" placeholder="Namn" v-model="namn" />
         </p>
 
         <p>
-            <label for="kön">Kön:</label><br />
-            <input type="radio" id="kön" name="kön"  value="man"> Man<br>
-            <input type="radio" id="kön"name="kön"  value="kvinna"> Kvinna<br>
-            <input type="radio" id="kön" name="kön" value="annat"> Annat<br>
-            <input type="radio" id="kön" name="kön" checked="checked" value="anonymt" > Anonymt<br>
+            <label for="mail">Mail:</label><br>
+            <input type="text" id="mail" name="m" required="required" placeholder="mail" v-model="mail"/>
+        </p>
+    </form>
+
+
+    <p>
+        <label for="betalingsmetod">Betalningsmetod:</label><br />
+        <select id="betalingsmetod" name="betalining" v-model="betalingsmetod">
+            <option>Mastercard </option>
+            <option>Visa</option>
+            <option>Klarna</option>
+            <option>Pay pal</option>
+        </select>
+    </p>
+
+        <p>
+            <label id="kön" for="kön">Kön:</label><br />
+            <input v-model="man" type="radio"  id="man" name="an" checked="checked" value="man"> Man<br>
+            <input v-model="kvinna" type="radio" id="kvinna" name="an"  value="kvinna"> Kvinna<br>
+            <input  v-model="annat" type="radio" id="annat"  name="an" value="annat"> Annat<br>
+            <input  v-model="anonymt" type="radio" id="anonymt"  name="an"  value="anonymt"> Anonymt<br>
         </p>
 
 
 
 
-        </section>
-
-
-</section>
-
-<button id="button" type="button"> Ready to order <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Check_green_icon.svg" width="10px"/></button>
 
 
 
-</body>
 
+<p>
+<button id="button1" type="button" v-on:click="markDone(namn, mail, betalingsmetod, man, kvinna, annat, anonymt)"> Ready to order <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Check_green_icon.svg" width="10px"/></button>
+
+</p>
+
+
+    <div id="order">
+
+        </div>
+
+
+    </section>
+
+
+<footer>
+</footer>
 </body>
 </html>

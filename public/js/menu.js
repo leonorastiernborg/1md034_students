@@ -4,7 +4,7 @@ let food = [
 
         "namn": "Halloumiburgare",
         "cal": "645 kcal",
-        "ingredienser": 'Halloumi, briochebröd och majonnäs',
+        "ingredienser": 'Halloumi, majonnäs',
         "allergier": 'gluten',
         "price": '60kr',
         "img": '/img/burger1.jpg',
@@ -13,9 +13,9 @@ let food = [
 
     {
 
-        "namn": "Halloumiburgare2.0",
+        "namn": "Halloumi2.0",
         "cal": "700 kcal",
-        "ingredienser": 'Umamidressing, halloumi, briochebröd',
+        "ingredienser": 'Umamidressing, halloumi',
         "allergier": 'gluten, laktos',
         "price": '70kr',
         "img": '/img/burger2.jpg',
@@ -23,9 +23,9 @@ let food = [
     },
 
     {
-        "namn": "Halloumiburgare3.0",
+        "namn": "Halloumi3.0",
         "cal": "800 kcal",
-        "ingredienser": 'halloumi, lökringar, majonnäs',
+        "ingredienser": 'halloumi, majonnäs',
         "allergier": 'gluten, laktos',
         "price": '80kr',
         "img": '/img/burger3.jpg',
@@ -36,7 +36,7 @@ let food = [
     {
         "namn": "Vegburgare",
         "cal": "670 kcal",
-        "ingredienser": 'vegoburgare, majonnäs',
+        "ingredienser": 'vegoburgare, sallad',
         "allergier": 'gluten, laktos',
         "price": '85kr',
         "img": '/img/burger4.jpg',

@@ -1,8 +1,6 @@
 
 /*
 
-
-
 function menuIteams(n, k, i,a, p, pth){
 
     this.namn = n;
@@ -36,6 +34,43 @@ let burger3 = new menuIteams('Halloumi3.0', '800 kcal',  'halloumi, lökringar, 
 let burger4 = new menuIteams('Vegburgare', '670 kcal',  'vegoburgare, majonnäs, sötpotatisbröd',
     'gluten, laktos', '85kr', '/img/burger4.jpg');
 let burger5 = new menuIteams('Veganburgare', '720 kcal',  'veganburgare, vegan-majonnäs, sötpotatisbröd', 'gluten', '80kr', '/img/burger5.jpg');
+
+
+
+let myButton = document.getElementById('button1');
+
+myButton.addEventListener("click", myFunction);
+
+
+
+function myFunction() {
+    console.log ("Button clicked!");
+    var namnid = document.getElementById("namn").value;
+    console.log(namnid);
+    var mailid = document.getElementById("mail").value;
+    console.log(mailid);
+    var streetid = document.getElementById("street").value;
+    console.log(streetid);
+    var hnumberid = document.getElementById("hnumber").value;
+    console.log(hnumberid);
+    var betalingsmetodid = document.getElementById("betalingsmetod").value;
+    console.log(betalingsmetodid);
+    var checkBox = document.getElementById("man");
+    if(document.getElementById("man").checked){
+        console.log("Man");
+    }
+    if(document.getElementById("kvinna").checked){
+        console.log("Kvinna");
+    }
+    if(document.getElementById("annat").checked){
+        console.log("Annat");
+    }
+    if(document.getElementById("anonymt").checked){
+        console.log("Anonymt");
+    }
+
+}
+
 
 
 var menu =  [ burger1, burger2, burger3, burger4, burger5];
