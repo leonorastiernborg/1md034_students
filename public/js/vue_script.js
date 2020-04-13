@@ -28,16 +28,11 @@ let burger5 = new menuIteams('Veganburgare', '720 kcal',  'veganburgare, vegan-m
 const vm = new Vue({
     el: '#burgare',
     data: {
-        menu:[
-            burger1,
-            burger2,
-            burger3,
-            burger4,
-            burger5
-        ]
+        mat: food,
+        menu: []
+
     }
 })
-
 
 
 
